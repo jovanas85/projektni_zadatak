@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Omiljeni film</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stilovi/stil.css">
+    <script src="javascript/zadatak.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header bg-light text-center" style="margin-bottom:0">
+        <h1>Moja prezentacija</h1>
+        <h6>Omiljeni film</h6>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-warning navbar-light justify-content-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Početna stranica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Rodjendanski_poklon.html">Rođendanski poklon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Omiljeni film</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Omiljeni_grad.html">Omiljeni grad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobi.html">Hobi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galerija.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kviz.html">Kviz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+
+            <div class="col-sm-6">
+               
+
+                <div>
+                    <img src="slike/poster.jpg" alt="Poster Titanik">
+                </div>
+               
+            </div>
+            <div class="col-sm-6 text-left padding-top:50px">
+                    <h2>TITANIC</h2>
+                    <h5>James Cameron, 1997</h5>
+                    <br>
+                    <br>
+
+                <p>
+
+                    <b>Naziv filma:</b> Titanic/ Titanik
+                    <br>
+                    <b>Datum izlaska filma:</b>19.12.1997.
+                    <br>
+                    <b>Reziser:</b> James Cameron
+                    <br>
+                    <b> Scenarista:</b> James Cameron
+                    <br>
+                    <b>Uloge:</b> Leondardo DiCaprio, Kate Winslet, Billy Zane
+                    <br>
+                    <b>Radnja:</b> Siromašni mladić sasvim slučajno dobija skupu ulaznicu za jedan od najpoznatijih brodova,
+                    Titanik. Na putovanju i samom Titaniku se zaljubljuje u mladu bogatu djevojku koja je zaručena.
+                    <br>
+                    <b>Zemlja:</b> USA
+                    <br>
+                    <b>Trajanje:</b> 3 h 14 min
+                    <br>
+                    <b>IMDb ocjena:</b> 7,8
+                    <br>
+                    <a class="text-decoration:none" href="https://www.imdb.com/title/tt0120338/">IMDb prezentacija</a>
+
+
+                </p>
+
+            </div>
+
+        </div>
+        <div id="div1">
+            <h2>Video trailer</h2>
+            <video class="margin" width="100%" height="auto" controls>
+                <source src="video/trailer.mp4" type="video/mp4"> Vaš brouser ne podržava HTML5 video.
+            </video>
+        </div> 
+        <div id="forma">
+            <form>
+                Pogodi žanr filma:
+                <br>
+                <input type="text" id="zanr">
+                <input type="button" onclick="disp_confirm()" value="Provjeri">
+            </form>
+        </div>
+    </div>
+
+
+
+    </div>
+    </div>
+    </div>
+
+    <div class="footer bg-light text-center" style="margin-bottom:0">
+        <p>&copy;Jovana Šatara</p>
+        <script>prikaziDatum(); </script>
+    </div>
+
+</body>
+
+</html>

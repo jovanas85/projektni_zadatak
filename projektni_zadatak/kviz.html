@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kviz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stilovi/stil.css">
+    <script src="javascript/zadatak.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header bg-light text-center" style="margin-bottom:0">
+        <h1>Moja prezentacija</h1>
+        <h6>Kviz</h6>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-warning navbar-light justify-content-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Početna stranica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Rodjendanski_poklon.html">Rođendanski poklon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Omiljeni_film.html">Omiljeni film</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Omiljeni_grad.html">Omiljeni grad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hobi.html">Hobi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Galerija.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kviz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+        <div class="row">
+        
+            <div class="col-sm-12 justify-content-center">
+                    <h2>KVIZ</h2>
+                <table class="table-responsive tabela " style="width:85%">
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="question">1. Koje godine sam rođena?</p>
+
+                                <ul>
+                                    <input class="answer" type="radio" name="q1" value="1">
+                                    <label id="correctString1">1985.</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q1" value="0">
+                                    <label>1986.</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q1" value="0">
+                                    <label>1984.</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q1" value="0">
+                                    <label>1990.</label>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="question">2. Koje je moje mjesto rođenja? </p>
+
+                                <ul>
+                                    <input class="answer" type="radio" name="q2" value="0">
+                                    <label class="answer">Banjaluka</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q2" value="0">
+                                    <label>Beograd</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q2" value="0">
+                                    <label>Prijedor</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q2" value="1">
+                                    <label id="correctString2">Drvar</label>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="question">3. Šta sam po zanimanju?</p>
+
+                                <ul>
+                                    <input class="answer" type="radio" name="q3" value="0">
+                                    <label>Ekonomista</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q3" value="1">
+                                    <label id="correctString3">Dipl. inženjer građ.</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q3" value="0">
+                                    <label>Informatičar</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q3" value="0">
+                                    <label>Diplomirani pravnik</label>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="question">4. Koji je moj omiljeni film?</p>
+
+                                <ul>
+                                    <input class="answer" type="radio" name="q4" value="0">
+                                    <label>Iron Man</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q4" value="0">
+                                    <label>Shuter Island</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q4" value="1">
+                                    <label id="correctString4">Titanic</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q4" value="0">
+                                    <label>the Sixth Sense</label>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="question">5. Koji je moj omiljeni grad?</p>
+
+                                <ul>
+                                    <input class="answer" type="radio" name="q5" value="0">
+                                    <label>Banjaluka</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q5" value="1">
+                                    <label id="correctString5">Berlin</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q5" value="0">
+                                    <label>Beograd</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q5" value="0">
+                                    <label>Drvar</label>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="question">6. Za rođendan želim:</p>
+
+                                <ul>
+                                    <input class="answer" type="radio" name="q6" value="1">
+                                    <label id="correctString6">Sat</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q6" value="0">
+                                    <label>Minđuše</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q6" value="0">
+                                    <label>Torbu</label>
+                                    <br>
+                                    <input class="answer" type="radio" name="q6" value="0">
+                                    <label>Bicikl</label>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <div style="margin-left: 43%;">
+                <div class="submitter">
+                    <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+                </div>
+            </div>
+
+                <!--show only wrong answers on submit-->
+                <div class="quizAnswers" id="correctAnswer1"></div>
+                <div class="quizAnswers" id="correctAnswer2"></div>
+                <div class="quizAnswers" id="correctAnswer3"></div>
+                <div class="quizAnswers" id="correctAnswer4"></div>
+                <div class="quizAnswers" id="correctAnswer5"></div>
+                <div class="quizAnswers" id="correctAnswer6"></div>
+
+                <!--show score upon submit-->
+                <div>
+                    <h2 class="quizScore" id="userScore"></h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="footer bg-light text-center" style="margin-bottom:0">
+        <p>&copy;Jovana Šatara</p>
+        <script>prikaziDatum(); </script>
+    </div>
+
+</body>
+
+</html>
